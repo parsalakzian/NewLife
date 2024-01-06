@@ -38,10 +38,18 @@
 
 <body>
 
-    <nav dir="rtl">
+    <div class="loading-wave">
+        <div class="loading-bar"></div>
+        <div class="loading-bar"></div>
+        <div class="loading-bar"></div>
+        <div class="loading-bar"></div>
+      </div>
+      
+
+    <nav>
         <div class="nav-logo">
-            <a href="#">
-                <img src="images/logos.png">
+            <a href="https://newlifes.site">
+                <img src="images/logos.png" alt="NewLife">
             </a>
         </div>
 
@@ -50,31 +58,31 @@
         </ul>
     </nav>
 
-    <header class="container" dir="rtl">
+    <header class="container">
         <div class="content">
             <span class="blur"></span>
             <span class="blur"></span>
-            <H1>  <span>ک</span>مپانی <span>ن</span>یو<span>ل</span>ایف</H1>
+            <H1>  کمپانی <span>نیولایف </span></H1>
             <p>
-                ‏یک شرکت مستقل فعال در زمینه های مختلف مانند کامپیوتر، انلاین، شبکه‏
+                یک شرکت مستقل فعال در زمینه های مختلف کامپیوتر، آنلاین، شبکه
             </p>
-            <button class="btn">وبلاگ</button>
+            <button id="btn">وبلاگ</button>
           </div>
       
             
         </div>
     </header>
 
-    <section class="container" >
+    <section class="container">
         <h2 class="header">پروژه ها</h2>
         <p class="sub-header">
-            پروژه های شخصی یا تجاری نیولایف 
+            پروژه های شخصی یا تجاری نیولایف
         </p>
-        <div class="pricing" dir="rtl">
+        <div class="pricing">
             <div class="card">
                 <div class="content">
-                    <img src="/src/images/nl.png" style="width: 120px;" alt="">
-                    <h3>نیولایف وی پی ان</h3>
+                    <img src="/src/images/nl.png" style="width: 120px;" alt="NewLife VPN">
+                    <h3>نیولایف وی پی ان </h3>
                     <p>
                         <i class="ri-checkbox-circle-line"></i>
                         اندروید
@@ -92,15 +100,15 @@
                         لینوکس
                     </p>
                     <p>
-                        <i class="ri-checkbox-circle-line"></i>
-                        مک او اس
+                        <i class="ri-alert-line"></i>
+                        مک او اس (به زودی)
                     </p>
                     <p>
                         <i class="ri-alert-line"></i>
                         آی او اس (به زودی)
                     </p>
                 </div>
-                <button onclick="openweb('https://nlvpn.newlifes.site/fa')" class="btn">وب سایت</button>
+                <button onclick="openweb('https://nlvpn.newlifes.site/fa')" class="btn" >وبسایت</button>
                 <script>
                     function openweb(link){
                         
@@ -110,7 +118,7 @@
             </div>
             <div class="card">
                 <div class="content">
-                    <img src="/src/images/lm.png" style="width: 120px;" alt="">
+                    <img src="/src/images/lm.png" style="width: 120px;" alt="LifeMusic">
                     <h3>لایف موزیک</h3>
                     <p>
                         <i class="ri-checkbox-circle-line"></i>
@@ -137,13 +145,13 @@
                         آی او اس (به زودی)
                     </p>
                 </div>
-                <button onclick="openweb('https://music.newlifes.site/fa')" class="btn">وب سایت</button>
+                <button onclick="openweb('https://music.newlifes.site/fa')" class="btn">وبسایت</button>
             </div>
             <div class="card">
                 <div class="content">
-                    <img src="/src/images/wr.png" style="width: 120px;" alt="">
+                    <img src="/src/images/wr.png" style="width: 120px;" alt="Worknoid">
 
-                    <h3>ورک نوید</h3>
+                    <h3>Worknoid</h3>
                     <p>
                         <i class="ri-checkbox-circle-line"></i>
                         اندروید
@@ -166,21 +174,23 @@
                     </p>
                     <p>
                         <i class="ri-alert-line"></i>
-                        آی او اس (به زودی)
+                        آی یو اس (به زودی)
                     </p>
                 </div>
-                <button onclick="openweb('https://worknoid.newlifes.site')" class="btn">وب سایت</button>
+                <button onclick="openweb('https://worknoid.newlifes.site/fa')" class="btn">وبسایت</button>
             </div>
         </div>
     </section>
 
-    <footer class="container" dir="rtl">
+    <footer class="container">
         <span class="blur"></span>
         <span class="blur"></span>
         <div class="column">
- 
+            <div class="logo">
+                <img src="images/logos.png">
+            </div>
             <p>
-                ‏یک شرکت مستقل فعال در زمینه های مختلف مانند کامپیوتر، انلاین، شبکه‏
+                یک شرکت مستقل فعال در زمینه های مختلف کامپیوتر، آنلاین، شبکه
             </p>
             <div class="socials">
                 <a href="https://www.youtube.com/channel/UCiYGlYSo8YSqVDo_mMNp0ug"><i class="ri-youtube-line"></i></a>
@@ -189,12 +199,12 @@
             </div>
         </div>
         <div class="column">
-            <h4>کمپانی</h4>
-            <a href="#">کمپانی نیولایف قصد دارد تا یک زندگی جدید را برای شما به ارمغان بیاورد</a>
+            <h4>شرکت</h4>
+            <a href="#">شرکت نیولایف قصد دارد زندگی جدیدی را برای شما به ارمغان بیاورد</a>
         </div>
         <div class="column">
             <h4>درباره ما</h4>
-            <a href="#">انجام انواع کار های کامپیوتری ، شبکه ، امنیتی ، به صورت حضوری و غیر حضوری</a>
+            <a href="#">انجام انواع کارهای کامپیوتری، شبکه ای، امنیتی، حضوری و حضوری</a>
         </div>
 
         </div>

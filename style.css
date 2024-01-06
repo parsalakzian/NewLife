@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
+@font-face {
+    font-family: Yekan;
+    src: url(/font/Yekan.woff);
+}
+
 *{
+    
     padding: 0;
     margin: 0;
     outline: none;
@@ -35,6 +41,21 @@ nav{
     justify-content: space-between;
     gap: 2rem;
 }
+  
+  @keyframes loading-wave-animation {
+    0% {
+      height: 10px;
+    }
+  
+    50% {
+      height: 20px;
+    }
+  
+    100% {
+      height: 10px;
+    }
+  }
+  
 
 .nav-logo{
     max-width: 100px;
@@ -48,6 +69,7 @@ nav{
 }
 
 .link a{
+    font-family: Yekan;
     position: relative;
     padding-bottom: 0.75rem;
     color: #fff;
@@ -56,7 +78,7 @@ nav{
 .link a::after{
     content: "";
     position: absolute;
-    height: 2px;
+    height: 3px;
     width: 0;
     bottom: 0;
     left: 0;
@@ -65,22 +87,35 @@ nav{
 }
 
 .link a:hover::after{
-    width: 80%;
+    width: 100%
 }
 
-.btn{
-    padding: 1rem 3rem;
-    font-size: 1rem;
+
+button {
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 20px;
+    font-weight: 600;
     color: #fff;
-    background-color: #00B5E8;
-    border-radius: 100px;
+    text-shadow: none;
+    background: #00B5E8;
     cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.btn:hover{
-    background-color: #1e40af;
-}
+    box-shadow: transparent;
+    border: 1px solid #ffffff80;
+    transition: 0.5s ease;
+    user-select: none;
+  }
+  
+  #btn:hover,
+  :focus {
+    color: #ffffff;
+    background: #008cff;
+    border: 1px solid #008cff;
+    text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff;
+    box-shadow: 0 0 5px #008cff, 0 0 20px #008cff, 0 0 50px #008cff,
+      0 0 100px #008cff;
+  }
+  
 
 .container{
     max-width: 1200px;
@@ -231,13 +266,14 @@ section .header{
     display: flex;
     flex-direction: column;
     border: 2px solid transparent;
-    border-radius: 15px;
+    border-radius: 30px;
     transition: all 0.3s ease;
+    box-shadow: 1px 5px 60px 0px #2ad1ff;
 }
 
 .pricing .card:hover{
     background-color: #323232;
-    border-color: #fff;
+    border-color: #00B5E8;
 }
 
 .pricing .card .content{
@@ -280,7 +316,7 @@ section .header{
 
 .pricing .card button:hover{
     background-color: #00B5E8;
-    border-color: #1e40af;
+    border-color: #00B5E8;
 }
 
 footer{
